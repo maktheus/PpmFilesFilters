@@ -12,12 +12,12 @@ int main() {
 
     Image image2;
     image2.loadPPM("image/lena.ppm");
-    applyGrayscaleFilter(image);
+    applyGrayscaleFilter(image2);
     image2.savePPM("lenaGrayscale.ppm");
 
     Image image3;
     image3.loadPPM("image/lena.ppm");
-    applySepiaFilter(image);
+    applySepiaFilter(image3);
     image3.savePPM("lenaSepia.ppm");
 
     return 0;

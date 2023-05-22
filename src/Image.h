@@ -20,7 +20,7 @@ public:
     Image();
     void loadPPM(const std::string& filename);
     void savePPM(const std::string& filename) const;
-    std::vector<Pixel>& getPixels();  // Added getPixels() function
+    std::vector<Pixel>& getPixels();  
 };
 
 #endif  // IMAGE_H

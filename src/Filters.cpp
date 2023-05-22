@@ -1,4 +1,7 @@
 #include "Image.h"
+#include <iostream>
+
+using namespace std;
 
 void applySepiaFilter(Image& image) {
     std::vector<Pixel>& pixels = image.getPixels();
@@ -7,6 +10,7 @@ void applySepiaFilter(Image& image) {
         unsigned char originalGreen = pixel.green;
         unsigned char originalBlue = pixel.blue;
 
+        
         pixel.red = static_cast<unsigned char>(0.393 * originalRed + 0.769 * originalGreen + 0.189 * originalBlue);
         pixel.green = static_cast<unsigned char>(0.349 * originalRed + 0.686 * originalGreen + 0.168 * originalBlue);
         pixel.blue = static_cast<unsigned char>(0.272 * originalRed + 0.534 * originalGreen + 0.131 * originalBlue);

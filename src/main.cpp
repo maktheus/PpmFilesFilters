@@ -1,4 +1,3 @@
-// main.cpp
 #include "Image.h"
 #include "Filters.h"
 
